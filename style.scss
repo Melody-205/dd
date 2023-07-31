@@ -1,0 +1,166 @@
+// variables 
+$hover-color: red;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
+    padding: 0 110px;
+    margin: 0 auto;
+    // border: 1px solid brown;
+    header {
+        // border: 1px red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+       
+           
+            }
+            .acct-border {
+                border-right: 1px solid gray;
+                padding-right: 30px;
+            }
+        
+    }
+    main {
+        .hero-section {
+            display: flex;
+            padding-top: 80px;
+            height: calc(100vh - 64px);
+
+            .left-section {
+            //    border: 1px solid blue;
+               width: 50%;
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+            //    justify-content: space-between;
+               padding-right: 120px;
+               h3 {
+                   font-size: 80px;
+                   padding: 50px 0px;
+               }
+               p {
+                   font-size: 25px;
+                   padding-bottom: 70px;
+                   
+               }
+               .btn-container {
+                   display: flex;
+
+                   .hero-link {
+                    padding: 12px;
+                    background-color: #b00000;
+                    color: #ffffff;
+                    display: inline-block;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    margin-right: 24px;
+ 
+                }
+               .hero-btn {
+                   padding: 12px;
+                   background-color: #ffffff;
+                   border: 1px solid #000000;
+                   border-radius: 8px;
+               }
+               }
+               
+            }
+        
+            
+            .right-section {
+                // border: 1px solid #e14c4c;
+                width: 50%;
+                background-image: url(./images/hero.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+
+              .triangle-one {
+                  width: 50px;
+                  height: 50px;
+                //   background-color: red;
+                  display: block;
+                  border-left: 25px solid red;
+                  border-right: 25px solid transparent;
+                  border-bottom: 25px solid red;
+                  border-top: 25px solid transparent;
+                  position: absolute;
+                  left: -20px;
+                  bottom: 190px;
+              }
+              .triangle-two {
+                width: 60px;
+                height: 60px;
+                // background-color: red;
+                display: block;
+                border-left: 30px solid transparent;
+                border-right: 30px solid red;
+                border-bottom: 30px solid red;
+                border-top: 30px solid transparent;
+                position: absolute;
+                right: -20px;
+                top: 50px;
+
+                
+            }
+            .triangle-three {
+                width: 70px;
+                height: 70px;
+                // background-color: red;
+                display: block;
+                border-left: 35px solid transparent;
+                border-right: 35px solid red;
+                border-bottom: 35px solid red;
+                border-top: 35px solid transparent;
+                position: absolute;
+                bottom: 120px;
+                right: -18px;
+            }
+            .sponsors {
+                margin: 80px 0;
+                .sponsor-top {
+                    display: flex;
+                    .sponsor-top-left {
+                        width: 50%;
+                    }
+                    .sponsor-top-right {
+                        width: 50%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+
+                        img {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            }
+
+        }
+
+    }
+    
+    nav {
+        border: 1px blue;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        
+        .nav-link {
+            margin-right: 35px;
+            font-size: 15px;
+            line-height: 22.5px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #000;
+            &:hover {
+                color: $hover-color;
+                font-weight: 600;
+        }
+    }
+}
